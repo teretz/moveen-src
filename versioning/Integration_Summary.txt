@@ -1,0 +1,29 @@
+## Integration Summary
+
+### Updated Files:
+- MechaGenerator.cs
+- MechaConfiguration.cs
+- GunComponent.cs
+- CockpitComponent.cs
+
+### New Files:
+- JetpackComponent.cs
+- OverdriveComponent.cs
+- PlayDeadComponent.cs
+- MechaFollowComponent.cs
+- MechaGeneratorEditor.cs
+- Wristwatch_UI.cs
+- Wristwatch_DevFunctions.txt
+- Wristwatch_Controls.txt
+
+### Features:
+- Procedural generation of mecha components
+- New states like jetpack, overdrive, play dead, and follow mode
+- XR Interaction Toolkit methods for Meta Quest 2
+- Wristwatch UI for triggering dev functions
+
+### Extension Points:
+- MechaConfiguration allows for CRUD operations on part sets (Stealth, Assault, etc.)
+- MechaGenerator can be further extended to include more components and states
+
+This summary outlines the work done for integrating new features into the existing MoveEn codebase.

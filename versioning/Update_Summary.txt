@@ -1,0 +1,38 @@
+## Update Summary for MoveEn Project
+
+### Date: 2023-08-29
+
+#### Updated Files:
+
+1. **MechaGenerator.cs**
+   - Added methods `GenerateArms` and `GenerateLegs` to handle procedural generation based on part sets.
+   - Added `AttachStateComponents` to handle state components like Jetpack, Overdrive, etc.
+
+2. **MechaConfiguration.cs**
+   - Added a list of part sets for filtering components.
+
+3. **MechaGeneratorEditor.cs**
+   - Extended the Unity Editor to allow input for part sets and other configurations.
+
+#### New Features:
+
+1. **Procedural Generation**: Components like arms and legs are now generated based on part sets specified in the `MechaConfiguration`. This allows for a more dynamic and customizable mecha.
+
+2. **State Components**: Added support for Jetpack, Overdrive, PlayDead, and MechaFollow components.
+
+3. **Unity Editor Extension**: The Unity Editor has been extended to allow customization options for mecha generation.
+
+#### Methods and Parameters for Extension:
+
+- **MechaGenerator.cs**
+  - `GenerateArms(GameObject parent, List<string> partSets)`: Can be extended to include more filtering options or additional setup logic.
+  - `GenerateLegs(GameObject parent, List<string> partSets)`: Similar to `GenerateArms`, can be extended for more complex logic.
+  - `AttachStateComponents(GameObject parent)`: Can be extended to include more state components as they are developed.
+
+- **MechaConfiguration.cs**
+  - `List<string> partSets`: Can be extended to include more types of part sets as needed.
+
+- **MechaGeneratorEditor.cs**
+  - `OnInspectorGUI()`: Can be extended to include more fields and options in the Unity Editor.
+
+This update aims to make the mecha generation more dynamic and customizable, without altering the core functionality of the existing codebase.
